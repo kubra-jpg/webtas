@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kübizm - Sanat Akımları</title>
+  <style>
+    /* stil.css */
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    main img {
+      display: block;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* Kullanıcı Bilgisi için sağ üst köşe stili */
+    .user-info {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kübizm</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="../index.html">Ana Sayfa</a></li>
+      <li><a href="ronesans.html">Rönesans</a></li>
+      <li><a href="kubizm.html">Kübizm</a></li>
+      <li><a href="barok.html">Barok </a></li>
+      <li><a href="surrealizm.html">Sürrealizm </a></li>
+      <li><a href="empresyonizm.html">Empresyonizm</a></li>
+      <li><a href="modernizm.html">Modernizm</a></li>
+    </ul>
+  </nav>
+
+  <div class="user-info" id="userInfo"></div>
+
+  <main>
+    <h2>Kübizm Nedir?</h2>
+    <p>Kübizm, 20. yüzyılın başlarında Fransa'da ortaya çıkan, sanat tarihinde devrim niteliğinde bir akımdır. Pablo Picasso ve Georges Braque tarafından öncülük edilen bu akım, doğayı ve nesneleri geometrik şekillerle analiz ederek farklı açılardan bir arada gösterme anlayışına dayanır. Perspektifin geleneksel kullanımını reddeden Kübizm, özellikle resim ve heykelde yepyeni bir görsel dil yaratmıştır. Gerçekliği parçalara ayırarak yeniden yapılandıran bu yaklaşım, modern sanatın gelişiminde önemli bir rol oynamıştır.</p>
+    <img src="../gorsel/guitarist.jpg" alt="Kübist bir tablo örneği" width="300">
+  </main>
+
+  <script>
+    // Sayfa yüklendiğinde, kullanıcı adı ve soyadını almak
+    window.onload = function() {
+      const firstName = localStorage.getItem('firstName');
+      const lastName = localStorage.getItem('lastName');
+
+      if (firstName && lastName) {
+        // Kullanıcı adı ve soyadını sağ üst köşeye yazdırma
+        document.getElementById('userInfo').textContent = firstName + " " + lastName;
+      } else {
+        // Eğer kullanıcı adı ve soyadı yoksa, "Misafir" yazdır
+        document.getElementById('userInfo').textContent = "Misafir";
+      }
+    };
+  </script>
+</body>
+</html>
+
