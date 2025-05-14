@@ -1,0 +1,100 @@
+/* Minigame genel yapısı */
+#quiz-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Soru başlığı */
+  #quiz-container h2 {
+    margin-bottom: 20px;
+    color: #4a90e2;
+  }
+  
+  /* Şıklar */
+  #quiz-container form label {
+    display: block;
+    background: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  #quiz-container form label:hover {
+    background: #e6f2ff;
+    border-color: #4a90e2;
+  }
+  #quiz-container form input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  /* Buton */
+  #quiz-container form button {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 24px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  #quiz-container form button:hover {
+    background-color: #357abd;
+  }
+  
+  /* Sonuç özeti */
+  .result-summary {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 24px;
+  }
+  .result-summary strong {
+    color: #4a90e2;
+  }
+  
+  /* Her bir sonuç maddesi */
+  .result-item {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  .result-item.correct {
+    background-color: #e6f8ec;
+    border: 1px solid #34a853;
+  }
+  .result-item.incorrect {
+    background-color: #fde6e6;
+    border: 1px solid #ea4335;
+  }
+  
+  /* Sonuç içindeki başlık */
+  .result-item strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.05em;
+  }
+  
+  /* Cevaplar */
+  .result-item .your-answer {
+    font-weight: bold;
+  }
+  .result-item.correct .your-answer {
+    color: #34a853;
+  }
+  .result-item.incorrect .your-answer {
+    color: #ea4335;
+  }
+  .result-item .correct-answer {
+    margin-top: 6px;
+    font-style: italic;
+    color: #34a853;
+  }

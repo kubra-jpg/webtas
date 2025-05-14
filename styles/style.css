@@ -1,0 +1,267 @@
+/* --------- iFrame Stilleri --------- */
+.navbar-iframe {
+  border: none;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+}
+
+
+/* --------- Global --------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* --------- Header --------- */
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* --------- Navbar (iframe içindeki) --------- */
+nav {
+  background-color: #333;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  transition: background-color 0.3s;
+}
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* --------- Main İçerik --------- */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+main h2 {
+  margin-top: 0;
+}
+
+/* --------- Tablo Stilleri --------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table, th, td {
+  border: 1px solid #ddd;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #4a90e2;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* --------- Form Stilleri --------- */
+.form-container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.form-container button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background-color: #357abd;
+}
+
+/* --------- Image Map Bölümü --------- */
+.map-heading {
+  text-align: center;
+  margin-top: 30px;
+  color: #4a90e2;
+}
+.map-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+  display: block;
+}
+
+
+
+/* --------- Responsive (Mobil) --------- */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    text-align: center;
+  }
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+/* Barok sayfasındaki görsel */
+main img {
+  display: block;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* User-info kutusu */
+.user-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* --------- Hakkımızda Sayfası --------- */
+.about-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.about-container h2 {
+  color: #4a90e2;
+  margin-top: 0;
+}
+
+.about-container p {
+  margin-bottom: 20px;
+}
+
+.visit-info {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-left: 4px solid #4a90e2;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-container {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+}
+
+/* --------- Footer Güncelleme --------- */
+/* iframe yüksekliğini biraz artırdık */
+.footer-iframe {
+  border: none;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+/* Footer genel */
+footer {
+  background-color: #333;
+  color: #ccc;
+  padding: 20px 0;
+}
+
+/* İçerikleri yatayda yaymak için flex */
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+/* Footer nav */
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+.footer-nav a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-nav a:hover {
+  color: #fff;
+}
+
+/* Kullanıcı selamlaması */
+.footer-user {
+  font-size: 0.95em;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Telif hakkı metni */
+.footer-copy {
+  font-size: 0.9em;
+  color: #999;
+  white-space: nowrap;
+}
+
+/* Responsive: dar ekranda dikey yerleşim */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

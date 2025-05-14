@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kayıt Ol - Sanat Akımları</title>
+
+  <!-- Ortak stil -->
+  <link rel="stylesheet" href="../styles/style.css">
+  <!-- Ortak JS: kayıt & karşılama -->
+  <script src="../scripts/myscript.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <iframe
+    src="../components/navbar.html"
+    class="navbar-iframe"
+    scrolling="no"
+    title="Ana Menü">
+  </iframe>
+
+  <!-- Başlık -->
+  <header>
+    <h1>Kayıt Ol</h1>
+  </header>
+
+  <!-- Kullanıcı Bilgisi -->
+  <div class="user-info" id="userInfo"></div>
+
+  <!-- Form -->
+  <main>
+    <div class="form-container">
+      <h2>Kayıt Ol</h2>
+      <form id="registrationForm">
+        <label for="firstName">Ad:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <label for="lastName">Soyad:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <button type="submit">Kaydet</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <iframe
+    src="../components/footer.html"
+    class="footer-iframe"
+    scrolling="no"
+    title="Alt Bilgi">
+  </iframe>
+
+</body>
+</html>

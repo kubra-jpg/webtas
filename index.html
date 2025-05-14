@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanat Akımları</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/myscript.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <iframe 
+    src="components/navbar.html"
+    class="navbar-iframe"
+    scrolling="no"
+    title="Ana Menü">
+  </iframe>
+
+  <!-- Header -->
+  <header>
+    <h1>Sanat Akımları</h1>
+    <p>Sanatın büyülü dünyasına hoş geldiniz! Aşağıdan sanat akımlarını keşfedin.</p>
+  </header>
+
+  <!-- Ana İçerik -->
+  <main>
+    <h2>Sanat Akımları ve Yılları</h2>
+    <p>Sanat akımları, tarih boyunca farklı dönemlerde ortaya çıkmış ve sanat dünyasında önemli değişikliklere neden olmuştur. İşte bazı önemli sanat akımları ve bunların kısa açıklamaları:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Sanat Akımı</th>
+          <th>Yıllar</th>
+          <th>Tanım</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rönesans</td>
+          <td>14. yüzyıl sonları – 17. yüzyıl başları</td>
+          <td>Rönesans, antik Yunan ve Roma kültüründen ilham alarak insan merkezli düşüncenin geliştiği bir dönemi temsil eder.</td>
+        </tr>
+        <tr>
+          <td>Kübizm</td>
+          <td>1907 – 1917</td>
+          <td>Kübizm, geleneksel sanat anlayışlarının ötesine geçerek nesneleri geometrik şekillerle tasvir etmeyi amaçlar.</td>
+        </tr>
+        <tr>
+          <td>Barok</td>
+          <td>17. yüzyıl – 18. yüzyıl başları</td>
+          <td>Barok, duygusal yoğunluk, ayrıntı zenginliği ve dramatik efektlerle dikkat çeker, genellikle dini temalar işlenir.</td>
+        </tr>
+        <tr>
+          <td>Sürrealizm</td>
+          <td>1920'ler – 1930'lar</td>
+          <td>Sürrealizm, rüya ve bilinçaltı dünyayı betimleyerek gerçekliği sorgular ve fantastik imgeler kullanır.</td>
+        </tr>
+        <tr>
+          <td>Empresyonizm</td>
+          <td>1860'lar – 1880'ler</td>
+          <td>Empresyonizm, doğanın ışık ve renklerinin anlık izlenimlerini yakalamayı amaçlayan bir akımdır.</td>
+        </tr>
+        <tr>
+          <td>Modernizm</td>
+          <td>19. yüzyıl sonları – 20. yüzyıl</td>
+          <td>Modernizm, geleneksel formların dışına çıkarak yenilikçi, soyut ve deneysel yaklaşımlar benimser.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- (Kayıt formu buradan kaldırıldı) -->
+
+    <!-- Görsel Harita -->
+    <h3 class="map-heading">
+      Aşağıdaki görsellere tıklayarak ilgili sayfaya gidebilirsiniz!!!
+    </h3>
+    <img
+      class="map-image"
+      src="gorsel/img-map.png"
+      usemap="#image-map"
+      alt="Sanat Akımları Haritası"
+    >
+    <map name="image-map">
+      <area alt="Rönesans"     title="Rönesans"      href="sayfalar/ronesans.html"     coords="0,4,140,497"   shape="rect">
+      <area alt="Kübizm"       title="Kübizm"        href="sayfalar/kubizm.html"       coords="147,2,283,499" shape="rect">
+      <area alt="Barok"        title="Barok"         href="sayfalar/barok.html"        coords="287,0,427,499" shape="rect">
+      <area alt="Sürrealizm"   title="Sürrealizm"    href="sayfalar/surrealizm.html"   coords="429,0,566,499" shape="rect">
+      <area alt="Empresyonizm" title="Empresyonizm"  href="sayfalar/empresyonizm.html" coords="573,-1,710,499" shape="rect">
+      <area alt="Modernizm"    title="Modernizm"     href="sayfalar/modernizm.html"    coords="712,2,856,499" shape="rect">
+    </map>
+  </main>
+
+  <!-- Footer -->
+  <iframe 
+    src="components/footer.html" 
+    class="footer-iframe" 
+    scrolling="no" 
+    title="Alt Bilgi">
+  </iframe>
+
+</body>
+</html>
